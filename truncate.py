@@ -16,7 +16,7 @@ if (os.path.isfile(fname)):
 	cursor = db.cursor()
 
 	# execute SQL query using execute() method.
-	cursor.execute("SELECT VERSION()")
+	cursor.execute("TRUNCATE activity_log")
 
 
 	# disconnect from server
